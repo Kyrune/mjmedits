@@ -1,0 +1,502 @@
+/**** Large Screens *****************************************************************************************************/
+
+@media (min-width: 1151px) {
+    /* Remove Small (mobile) elements from Larger screens */
+    .imgS {
+      display: none;
+    }
+  
+    .introS__subsection {
+      display: none;
+    }
+  
+    .headerS {
+      display: none;
+    }
+  
+    /* Remove punctuational period from services subtitle */
+    .services__subtitle-period {
+      display: none;
+    }
+  }
+  
+  /**** Medium Screens Only ************************************************************************************************/
+  
+  /* 1500-1151 */
+  @media (max-width: 1500px) and (min-width: 1151px) {
+    .intro__subsection {
+      width: 100%;
+    }
+  }
+  
+  /* 1300-1151 */
+  @media (max-width: 1300px) and (min-width: 1151px) {
+    .services__dots-container {
+      max-width: 60%;
+    }
+  }
+  
+  /* 1150-801 */
+  @media (max-width: 1150px) and (min-width: 801px) {
+    /**** Logo - Medium Screens Only ****/
+    .logo__img {
+      max-width: 200px;
+    }
+  
+    .title__img {
+      margin-left: 0;
+      max-width: 500px;
+    }
+  
+    /**** Intro - Medium Screens Only ****/
+    .introS__subsection {
+      width: 100%;
+      max-width: 100%;
+      padding-top: 0;
+      padding-bottom: 10rem;
+    }
+  
+    .introS__img {
+      top: 6em;
+      max-width: 350px;
+    }
+  
+    .aboutS__subsection {
+      padding-bottom: 1rem;
+    }
+  
+    .textS1 {
+      position: relative;
+      top: -1em;
+      margin-left: 20em;
+    }
+  
+    /**** Header - Medium Screens Only ****/
+    .headerS {
+      top: 11.3em;
+      width: 100%;
+      margin: 0;
+    }
+  
+    .nav__listS {
+      justify-content: center;
+      padding: 0;
+    }
+  
+    .nav__itemS {
+      flex-direction: column;
+    }
+  
+    .nav__linkS {
+      display: flex;
+      justify-content: center;
+      top: 0.1rem;
+      width: 150px;
+      padding-top: 1.5rem;
+      font-size: 1.3em;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+    }
+  
+    .linkS1 {
+      margin-right: 5rem;
+    }
+  
+    /* Fills gap between about__text box and header */
+    .nav__underitemS {
+      width: 150px;
+      height: 150px;
+      padding-bottom: 2rem;
+    }
+  
+    /* Animation for Header Services btn */
+    .slide1 {
+      transform-origin: bottom;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-name: slide1;
+      animation-timing-function: ease;
+      animation-direction: alternate-reverse;
+      animation-delay: 2s;
+    }
+  
+    @keyframes slide1 {
+      0% { transform: translateY(0); }
+      25% { transform: translateY(0); }
+      50% { transform: translateY(10px); }
+      75% { transform: translateY(20px); }
+      100% { transform: translateY(0); }
+    }
+  
+    /* Animation for Header Info btn */
+    .slide2 {
+      transform-origin: bottom;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-name: slide2;
+      animation-timing-function: ease;
+      animation-direction: alternate-reverse;
+    }
+  
+    @keyframes slide2 {
+      0% { transform: translateY(0); }
+      20% { transform: translateY(10px); }
+      40% { transform: translateY(20px); }
+      60% { transform: translateY(10px); }
+      80% { transform: translateY(15px); }
+      100% { transform: translateY(0); }
+    }
+  
+    /**** Services - Medium Screens Only ****/
+    .services__dots-container {
+      max-width: 70%;
+    }
+  
+    .services__subtitle-container {
+      max-width: 50%;
+    }
+    
+    /**** Info - Medium Screens Only ****/
+    .info__dots-container {
+      width: 50%;
+    }
+  
+    .blue-info--dot {
+      margin-top: 0.5rem;
+    }
+  }
+  
+  /**** L-Medium/Small Screens **********************************************************************************************/
+  
+  @media (max-width: 1500px) {
+    /**** Divider Banners - L-Medium/Small Section****/
+    .div__banner {
+      height: 25px;
+    }
+  
+    .blue-banner--center {
+      width: 150px;
+      height: 20px;
+    }
+  
+    /**** Services - L-Medium/Small Section****/
+    .services {
+      width: 100%;
+      background-position: center;
+    }
+  
+    .services__subsection {
+      width: 100%;
+    }
+  
+    .subsection__service-text {
+      flex-direction: column;
+    }
+  
+    .service__miditem {
+      margin-top: 4rem;
+      margin-right: 0;
+      margin-left: 0;
+      margin-bottom: 4rem;
+    }
+    /**** Info - L-Medium/Small Section****/
+    .info {
+      width: 100%;
+    }
+  }
+  
+  /**** SM-Medium/Small Screens **********************************************************************************************/
+  
+  @media (max-width: 1150px) {
+    /* Remove large-screen intro section from smaller screens */
+    .intro__subsection {
+      display: none;
+    }
+  
+    /**** General - Medium/Small Section****/
+    #top-anchor {
+      right: 10px;
+      padding-top: 10px;
+      padding-right: 12px;
+      padding-left: 12px;
+      padding-bottom: 10px;
+      font-size: var(--fs-body);
+    }
+  
+    #top-anchor:hover {
+      transform: none;
+      opacity: 0.8;
+    }
+  
+    .bg__imgs {
+      max-width: 100%;
+    }
+  
+    .title__div {
+      width: 100%;
+    }
+  
+    .dots-S {
+      max-width: 11px;
+      height: 0.7rem;
+      font-size: 0.7em;
+    }
+  
+    /**** Divider Banners - Medium/Small Section ****/
+    .div__banner-subsection {
+      max-width: 100%;
+    }
+  
+    .div__banner-center {
+      justify-content: space-around;
+      max-width: 100%;
+    }
+  
+    /**** Intro - Medium/Small Section ****/
+    .introS__subsection {
+      position: relative;
+      background-image: url(../images/bg-intro.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  
+    .img-headerS__subsection {
+      position: relative;
+      display: flex;
+    }
+  
+    .introS__img {
+      position: relative;
+      width: 100%;
+      height: auto;
+      box-shadow: var(--bs);
+      z-index: 10;
+    }
+  
+    .aboutS__subsection {
+      position: relative;
+      top: -2em;
+      padding-top: 4rem;
+      color: var(--clr-light);
+      background: var(--clr-dark);
+      box-shadow: var(--bs);
+      z-index: 1;
+    }
+  
+    .aboutS__text {
+      padding-right: 2rem;
+      padding-left: 2rem;
+      padding-bottom: 2rem;
+    }
+  
+    /**** Header - Medium/Small Section ****/
+    .headerS {
+      position: relative;
+      width: 100%;
+    }
+  
+    .nav__listS {
+      position: relative;
+      display: flex;
+      list-style: none;
+    }
+  
+    .nav__itemS {
+      display: flex;
+    }
+  
+    .nav__linkS {
+      position: relative;
+      text-decoration: none;
+      font-family: var(--ff-title);
+      font-size: 1.3em;
+      font-weight: var(--fw-bold);
+      color: var(--clr-dark);
+      background: var(--clr-accent);
+      z-index: 4;
+    }
+  
+    /* Fills gap between about text box and header */
+    .nav__underitemS {
+      position: relative;
+      top: 0;
+      background: var(--clr-accent);
+    }
+    
+  
+    /**** Services - Medium/Small Section ****/
+    .services__subtitle {
+      text-align: justify;
+    }
+  
+    .services__bracket {
+      font-size: 5em;
+      font-weight: lighter;
+    }
+  
+    .service__text {
+      border-top: 2px solid var(--clr-accent);
+      border-bottom: 2px solid var(--clr-accent);
+      box-shadow: none;
+    }
+  
+    /**** Info - Medium/Small section ****/
+    .blue-info--dot {
+      top: 1rem;
+    }
+  
+    .info__step {
+      padding: 1rem;
+    }
+  
+    .info__text {
+      padding-right: 3rem;
+      padding-left: 3rem;
+    }
+  }
+  
+  /**** M-Small Screens **************************************************************************************************/
+  
+  @media (max-width: 800px) {
+  
+    /**** Logo - M-Small Section ****/
+    .logo__img {
+      max-width: 100px;
+    }
+  
+    .title__img {
+      margin-left: 0;
+      max-width: 200px;
+    }
+  
+    /**** Divider Banners - M-Small Section ****/
+    .div__banner {
+      height: 15px;
+    }
+  
+    .blue-banner--center {
+      width: 90px;
+      height: 10px;
+    }
+  
+    /**** Intro - M-Small Section ****/
+    .introS__img {
+      max-width: 50%;
+    }
+  
+    .introS__subsection {
+      padding-top: 3rem;
+      padding-bottom: 5rem;
+    }
+  
+    /**** Header - M-Small Section ****/
+    .headerS {
+      top: 0em;
+      margin-left: -4em;
+      max-width: 50%;
+      text-align: right;
+    }
+  
+    .nav__listS {
+      flex-direction: column;
+    }
+      
+    .nav__linkS {
+      align-self: flex-end;
+      padding-top: 0.7rem;
+      padding-right: 0.7rem;
+      padding-bottom: 0.7rem;
+      font-size: 1em;
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+  
+    .itemS1 {
+      margin-bottom: 1rem;
+    }
+  
+    .linkS1 {
+      margin-left: 2rem;
+      padding-left: 2rem;
+    }
+  
+    .linkS2 {
+      margin-left: 2rem;
+      padding-left: 5.3rem;
+    }
+  
+    /* Fills gap between about__text box and intro__img */
+    .nav__underitemS {
+      position: relative;
+      top: 0;
+      margin-left: -10em;
+      width: 100px;
+      padding: 0.7rem;
+      background: var(--clr-accent);
+      z-index: 3;
+    }
+  
+    .linkS1 {
+      padding-left: 0.5rem;
+    }
+  
+    .linkS2 {
+      padding-left: 2.7rem;
+    }
+  
+    .services__dots-container {
+      max-width: 100%;
+    }
+  
+    .services__subtitle {
+      max-width: 300px;
+    }
+  
+    /**** Info - M-Small Section****/
+    .info__dots-container {
+      width: 80%;
+    }
+  
+    .info__step {
+      margin-bottom: -1rem;
+    }
+  }
+  
+  /**** SM-Small Screens **********************************************************************************************/
+  
+  @media (max-width: 800px) and (min-width: 550px) {
+    /**** Logo - SM-Small Section****/
+    .logo__img {
+      max-width: 170px;
+    }
+  
+    .title__img {
+      margin-left: 0;
+      max-width: 350px;
+    }
+  
+    /**** Header - SM-Small Section****/
+    .headerS {
+      top: 2em;
+    }
+  
+    .nav__linkS {
+      padding-top: 1rem;
+      padding-right: 1rem;
+      padding-bottom: 1rem;
+      font-size: 1.2em;
+    }
+  
+    .itemS1 {
+      margin-bottom: 2rem;
+    }
+  }
+  
+  /**** Extra Small Screens **********************************************************************************************/
+  
+  @media (max-width: 300px) {
+    .logo__img {
+      max-width: 80px;
+    }
+  }
+  
